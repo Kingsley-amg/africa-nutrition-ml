@@ -1,0 +1,130 @@
+{
+  "n_rows": 1094,
+  "n_countries": 49,
+  "year_range": [
+    2001,
+    2023
+  ],
+  "target_mean": 19.3,
+  "correlations_with_target": {
+    "log_gdp": -0.55,
+    "log_health_exp": -0.48,
+    "water_access": -0.58,
+    "sanitation_access": -0.49,
+    "fertility_rate": 0.49,
+    "rural_pop_pct": 0.29,
+    "food_production_idx": -0.14,
+    "agri_employment_pct": 0.41,
+    "agri_value_added_pct": 0.32,
+    "pop_growth": 0.36,
+    "primary_enrollment": 0.05,
+    "inflation": 0.12
+  },
+  "leaderboard": [
+    {
+      "model": "Extra Trees",
+      "R2_random": 0.979,
+      "R2_grouped": 0.17,
+      "RMSE_grouped": 10.65,
+      "MAE_grouped": 8.22
+    },
+    {
+      "model": "Random Forest",
+      "R2_random": 0.935,
+      "R2_grouped": 0.104,
+      "RMSE_grouped": 10.91,
+      "MAE_grouped": 8.53
+    },
+    {
+      "model": "Gradient Boosting",
+      "R2_random": 0.868,
+      "R2_grouped": 0.096,
+      "RMSE_grouped": 11.12,
+      "MAE_grouped": 8.54
+    },
+    {
+      "model": "ElasticNet",
+      "R2_random": 0.417,
+      "R2_grouped": 0.035,
+      "RMSE_grouped": 11.39,
+      "MAE_grouped": 8.74
+    },
+    {
+      "model": "Lasso",
+      "R2_random": 0.421,
+      "R2_grouped": 0.006,
+      "RMSE_grouped": 11.54,
+      "MAE_grouped": 8.91
+    },
+    {
+      "model": "Ridge",
+      "R2_random": 0.422,
+      "R2_grouped": -0.039,
+      "RMSE_grouped": 11.79,
+      "MAE_grouped": 9.16
+    },
+    {
+      "model": "Linear Regression",
+      "R2_random": 0.422,
+      "R2_grouped": -0.041,
+      "RMSE_grouped": 11.8,
+      "MAE_grouped": 9.17
+    },
+    {
+      "model": "K-Nearest Neighbors",
+      "R2_random": 0.829,
+      "R2_grouped": -0.07,
+      "RMSE_grouped": 12.16,
+      "MAE_grouped": 9.08
+    },
+    {
+      "model": "SVR (RBF)",
+      "R2_random": 0.764,
+      "R2_grouped": -0.154,
+      "RMSE_grouped": 12.48,
+      "MAE_grouped": 9.57
+    },
+    {
+      "model": "Decision Tree",
+      "R2_random": 0.756,
+      "R2_grouped": -0.355,
+      "RMSE_grouped": 13.07,
+      "MAE_grouped": 10.31
+    }
+  ],
+  "best_model": "Extra Trees",
+  "best_r2_grouped": 0.17,
+  "best_r2_random": 0.979,
+  "holdout_r2": 0.392,
+  "holdout_mae": 6.75,
+  "ols_r2": 0.451,
+  "ols_coefs": {
+    "log_gdp": -9.2,
+    "log_health_exp": 4.39,
+    "water_access": -4.2,
+    "sanitation_access": -0.69,
+    "fertility_rate": 1.62,
+    "rural_pop_pct": -1.85,
+    "food_production_idx": -0.9,
+    "agri_employment_pct": -0.63,
+    "agri_value_added_pct": -2.78,
+    "pop_growth": 0.82,
+    "primary_enrollment": 1.67,
+    "inflation": 0.95
+  },
+  "max_vif": 6.9,
+  "mixed_coefs": {
+    "log_gdp": -7.63,
+    "log_health_exp": 0.91,
+    "water_access": -1.43,
+    "sanitation_access": 1.23,
+    "fertility_rate": -0.59,
+    "rural_pop_pct": 1.26,
+    "food_production_idx": -1.5,
+    "agri_employment_pct": -2.76,
+    "agri_value_added_pct": -0.52,
+    "pop_growth": 0.24,
+    "primary_enrollment": -1.02,
+    "inflation": 0.27
+  }
+}
