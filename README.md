@@ -31,8 +31,8 @@ leakage, with **SHAP** explaining the best model.
 ![ML leaderboard](outputs/03_ml_leaderboard.png)
 
 ## 🔑 Key findings
-- **Income is the dominant correlate**: higher GDP per capita is strongly associated with lower undernourishment (r = −0.55).
-- **Water access, sanitation and health spending** are also strongly protective (r ≈ −0.5).
+- **Income is the dominant correlate**: higher GDP per capita is strongly associated with lower undernourishment (r = -0.55).
+- **Water access, sanitation and health spending** are also strongly protective (r ≈ -0.5).
 - **Higher fertility and agricultural employment** are associated with *more* undernourishment.
 - These directions are consistent across the correlation, OLS and mixed-effects models.
 - **But generalisation is limited** (grouped R² ≈ 0.17): cross-country determinants explain only part of the story; large country-specific effects (captured by the mixed model's random intercepts) dominate.
